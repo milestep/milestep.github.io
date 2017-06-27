@@ -37,9 +37,12 @@ li{
     font-family: "BebasRegular";
 }
 
-a, a:hover{
+a, a:hover, a:focus{
     text-decoration: none;
     font-family: "BebasRegular";
+}
+.logo{
+    float: left;
 }
 
 .logo h3{
@@ -69,11 +72,6 @@ header{
 
 .header-nav a:hover{
     color: #a11819;
-}
-
-#menu ul li a.active{
-    color:#4996e5;
-    text-decoration:none;
 }
 
 .welcome{
@@ -221,4 +219,21 @@ textarea{
 
 form{
     margin-bottom: 234px;
+}
+
+a.active{
+    color: #a11819;
+}
+
+.header-nav.fixed{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: #383838;
+    z-index: 1;
+    left: 0;
+}
+
+.header-nav.fixed ul{
+    margin-top: 12px;
 }
