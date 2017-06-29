@@ -74,6 +74,61 @@ header{
     color: #a11819;
 }
 
+#touch-menu
+{
+  background: url("../img/mobile-nav.png") no-repeat left;
+  color: #fff;
+  display: none;
+  font-family: "BebasRegular";
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.header-nav.fixed{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: #383838;
+    z-index: 1;
+    left: 0;
+}
+
+.header-nav.fixed ul{
+    margin-top: 12px;
+}
+
+@media (max-width: 992px)
+{
+  .top_menu
+  {
+    display: none;
+  }
+  .top_menu li
+  {
+    display: block;
+    height: 58px;
+    position: relative;
+    text-align: center;
+  }
+  #touch-menu
+  {
+    display: block;
+    text-align: center;
+  }
+
+  .top_menu{
+    background-color: #383838;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav.fixed ul{
+    margin-top: 0;
+  }
+}
+
 .welcome{
     text-align: center;
     color: #fefefe;
@@ -225,15 +280,3 @@ a.active{
     color: #a11819;
 }
 
-.header-nav.fixed{
-    height: 50px;
-    position: fixed;
-    top: 0;
-    background-color: #383838;
-    z-index: 1;
-    left: 0;
-}
-
-.header-nav.fixed ul{
-    margin-top: 12px;
-}
