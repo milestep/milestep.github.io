@@ -37,9 +37,12 @@ li{
     font-family: "BebasRegular";
 }
 
-a, a:hover{
+a, a:hover, a:focus{
     text-decoration: none;
     font-family: "BebasRegular";
+}
+.logo{
+    float: left;
 }
 
 .logo h3{
@@ -71,9 +74,60 @@ header{
     color: #a11819;
 }
 
-#menu ul li a.active{
-    color:#4996e5;
-    text-decoration:none;
+#touch-menu
+{
+  background: url("../img/mobile-nav.png") no-repeat left;
+  color: #fff;
+  display: none;
+  font-family: "BebasRegular";
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.header-nav.fixed{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: #383838;
+    z-index: 1;
+    left: 0;
+}
+
+.header-nav.fixed ul{
+    margin-top: 12px;
+}
+
+@media (max-width: 992px)
+{
+  .top_menu
+  {
+    display: none;
+  }
+  .top_menu li
+  {
+    display: block;
+    height: 58px;
+    position: relative;
+    text-align: center;
+  }
+  #touch-menu
+  {
+    display: block;
+    text-align: center;
+  }
+
+  .top_menu{
+    background-color: #383838;
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav.fixed ul{
+    margin-top: 0;
+  }
 }
 
 .welcome{
@@ -90,6 +144,10 @@ header{
     background-color: #ab1111;
     text-align: center;
     padding: 18px 5px 18px 5px;
+}
+
+.btn-about{
+  margin-bottom: 100px;
 }
 
  .btn-header{
@@ -130,7 +188,7 @@ margin-bottom: 73px;
 
 .services{
     background-color: #4a3d63;
-    margin-top: 170px;
+    margin-top: 150px;
 }
 
 .portfolio{
@@ -222,3 +280,8 @@ textarea{
 form{
     margin-bottom: 234px;
 }
+
+a.active{
+    color: #a11819;
+}
+
