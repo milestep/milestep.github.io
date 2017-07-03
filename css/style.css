@@ -292,3 +292,15 @@ a.active{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (max-width: 992px){
+    .skills-wrapper{
+        background: none;
+    }
+}
+
+@media (min-width: 992px){
+.skills-wrapper img{
+        display: none;
+    }
+}
