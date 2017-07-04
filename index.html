@@ -15,28 +15,6 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/html5element.js"></script>
       <![endif]-->
-      <script>
-function AjaxFormRequest(result_id,formMain,url) {
-   jQuery.ajax({
-      url:     url,
-      type:     "POST",
-      dataType: "html",
-      data: jQuery("#"+formMain).serialize(),
-      success: function(response) {
-         document.getElementById(result_id).innerHTML = response;
-      },
-      error: function(response) {
-         document.getElementById(result_id).innerHTML = "Возникла ошибка при отправке формы. Попробуйте еще раз";
-      }
-   });
-
-   $(':input','#formMain')
- .not(':button, :submit, :reset, :hidden')
- .val('')
- .removeAttr('checked')
- .removeAttr('selected');
-}
-</script>
    </head>
    <body>
       <header>
@@ -199,12 +177,11 @@ function AjaxFormRequest(result_id,formMain,url) {
                   <h3>eugene@milestep.io</h3>
                </div>
                <div class="col-md-7 animated fadeInLeft wow animated">
-                <div id="messegeResult"> success</div>
-                  <form method="post" action="" id="formMain">
-                     <input name="name" type="text" placeholder="full name" required="required">
-                     <input name="email" type="email" placeholder="email" required="required">
-                     <textarea name="message"  placeholder="message" required="required"></textarea>
-                     <button class="btn-submit" type="submit" onclick="AjaxFormRequest('messegeResult', 'formMain', 'contacts.php')">send</button>
+                  <form>
+                     <input type="text" placeholder="full name" required="required">
+                     <input type="email" placeholder="email" required="required">
+                     <textarea name="text"  placeholder="message" required="required"></textarea>
+                     <button class="btn-submit" type="submit">send</button>
                   </form>
                </div>
                <p style="font-size: 14px; text-align: center">Copyright © 2017, MileStep Outsourcing</p>
