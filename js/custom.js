@@ -37,3 +37,8 @@ $(".header-nav, .button").on("click","a", function (event) {
                 }
             });
         });
+
+
+ $('iframeSelector').load(function(){
+  $(this).contents().find('elementSelector').css('backrgound-color','red');
+});
