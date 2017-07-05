@@ -310,3 +310,12 @@ a.active{
         display: none;
     }
 }
+
+.mail-to{
+    color: #ffffff;
+}
+
+.mail-to:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
