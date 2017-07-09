@@ -60,9 +60,27 @@ a:focus{
     color: #a11819;
 }
 
-header{
+header, .split-side{
     background-image: url("../img/header-bg.png");
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-attachment: fixed;
     background-size: cover;
+}
+
+.split-side{
+    text-align: center;
+    padding: 130px;
+}
+
+.split-side a{
+    color: #ffffff !important;
+    opacity: 0.3;
+
+}
+
+.split-side a:hover{
+    opacity: 1;
 }
 
 .header-nav{
@@ -198,7 +216,7 @@ margin-bottom: 73px;
 }
 
 .portfolio{
-    background-color: #dad3db;
+    background-color: #efeaf0;
 }
 
 .portfolio img{
@@ -233,7 +251,6 @@ margin-bottom: 73px;
 
 .team p{
     margin-top: 0;
-    margin-bottom: 120px;
 }
 
 footer{
@@ -318,4 +335,9 @@ a.active{
 .mail-to:hover{
     text-decoration: underline;
     color: #ffffff;
+}
+
+.split{
+    background-color: #4a3d63;
+    height: 240px;
 }
