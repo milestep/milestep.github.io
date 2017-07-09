@@ -339,5 +339,9 @@ a.active{
 
 .split{
     background-color: #4a3d63;
-    height: 240px;
+    height: 200px;
+}
+
+.employee{
+    height: 450px;
 }
