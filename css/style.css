@@ -345,3 +345,11 @@ a.active{
 .employee{
     height: 450px;
 }
+
+.btn-top{
+    text-align: center;
+}
+
+.btn-top a{
+    color: #ffffff;
+}
