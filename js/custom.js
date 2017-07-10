@@ -13,7 +13,7 @@ jQuery(window).scroll(function(){
     })
  });
 
-$(".header-nav, .button, .split-side").on("click","a", function (event) {
+$(".header-nav, .button, .split-side,.btn-top").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
